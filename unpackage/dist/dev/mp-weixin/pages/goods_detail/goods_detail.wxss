@@ -1,0 +1,266 @@
+
+page {
+	padding-bottom: 99rpx;
+	position: relative;
+}
+image {
+	display: block;
+}
+.page-section-spacing {
+	position: relative;
+}
+.swiper {
+	height: 750rpx;
+}
+.swiper-item {
+	display: block;
+	height: 750rpx;
+	line-height: 750rpx;
+	text-align: center;
+	color: #FFFFFF;
+}
+.swiper-item image {
+	width: 100%;
+	height: 100%;
+}
+.swiper-list {
+	margin-top: 40rpx;
+	margin-bottom: 0;
+}
+.goods-maininfo {
+	padding: 20rpx 30rpx;
+}
+.pic_index {
+	width: 80rpx;
+	height: 40rpx;
+	text-align: center;
+	line-height: 40rpx;
+	border-radius: 40rpx;
+	color: #fff;
+	font-size: 24rpx;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	bottom: 30rpx;
+	right: 30rpx;
+}
+.price {
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+.r-price {
+	font-size: 24rpx;
+	font-weight: bold;
+	color: rgba(203, 21, 34, 1);
+}
+.r-price view {
+	font-size: 48rpx;
+	display: inline-block;
+}
+.o-price {
+	font-size: 22rpx;
+	font-weight: 400;
+	color: #999999;
+	text-decoration: line-through;
+	margin-left: 12rpx;
+	line-height: 50rpx;
+}
+.selected {
+	height: 80rpx;
+	font-size: 24rpx;
+	font-weight: 500;
+	color: rgba(102, 102, 102, 1);
+	border-top: solid 1rpx #f4f5f7;
+}
+.selected view {
+	font-size: 30rpx;
+	font-weight: 500;
+	color: rgba(51, 51, 51, 1);
+	margin-left: 28rpx;
+}
+.title {
+	font-size: 32rpx;
+	font-weight: 500;
+	color: rgba(34, 34, 34, 1);
+	line-height: 40rpx;
+}
+.subtilte {
+	font-size: 24rpx;
+	color: #666666;
+	margin-top: 10rpx;
+}
+.title-sub {
+	padding: 20rpx 0;
+	font-size: 28rpx;
+	font-weight: 400;
+	color: rgba(153, 153, 153, 1);
+}
+.menu-title {
+	border-top: solid 20rpx #f3f5f7;
+}
+.detial-content {
+	width: 100%;
+	overflow: hidden;
+}
+.detial-content image {
+	width: 100%;
+	height: auto;
+}
+.bottom-menu {
+	height: 98rpx;
+	width: 100%;
+	background-color: #fff;
+	border-top: solid 1rpx #f4f5f7;
+}
+.bottom-menu-con {
+	height: 100%;
+	font-size: 30rpx;
+	color: #222222;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.s-btn {
+	height: 100%;
+	width: 155rpx;
+	background-color: #FFFFFF;
+	color: #666666;
+	font-size: 22rpx;
+	position: relative;
+}
+.s-btn image {
+	width: 44rpx;
+	height: auto;
+	margin-bottom: 6rpx;
+}
+.sub-btn {
+	height: 100%;
+	background-color: #FFA838;
+	line-height: 98rpx;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 30rpx;
+	font-weight: 400;
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+}
+.buynow {
+	background-color: #CB0E0E;
+}
+.slelect-content {
+	margin-top: 15rpx;
+}
+.selectImg {
+	width: 170rpx;
+	height: 170rpx;
+	overflow: hidden;
+	border: 1rpx solid rgba(233, 233, 233, 1)
+}
+.selectImg image {
+	width: 100%;
+	height: auto;
+}
+.selectInfo {
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+	margin-left: 20rpx;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	font-size: 24rpx;
+	height: 170rpx;
+}
+.selectPrice {
+	color: rgba(203, 14, 14, 1);
+}
+.selectPrice view {
+	font-size: 20rpx;
+	color: #666666;
+	text-decoration: line-through;
+	margin-left: 10rpx;
+}
+.selectSpec {
+	color: rgba(51, 51, 51, 1);
+	font-size: 26rpx;
+	margin: 20rpx 0 12rpx 0;
+}
+.selec-title {
+	font-size: 26rpx;
+	color: rgba(51, 51, 51, 1);
+}
+.specWrap {
+	overflow: hidden;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.spec-view {
+	height: 60rpx;
+	background: rgba(246, 245, 245, 1);
+	border-radius: 5rpx;
+	padding: 0 30rpx;
+	font-size: 24rpx;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	text-align: center;
+	margin-right: 30rpx;
+	line-height: 60rpx;
+	min-width: 80rpx;
+}
+.seleType {
+	color: #FFFFFF;
+	background-color: rgba(235, 42, 56, 1);
+}
+.goods-card-num {
+	height: 60rpx;
+}
+.goods-card-num button {
+	width: 60rpx;
+	height: 60rpx;
+	background-size: 40rpx 40rpx;
+}
+.submit-btn {
+	width: 100%;
+	height: 100rpx;
+	position: absolute;
+	bottom: 0;
+}
+.submit-btn button {
+	height: 100%;
+	line-height: 100rpx;
+	border-radius: 0;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	font-size: 30rpx;
+	color: #FFFFFF;
+	background-color: #CB0E0E;
+}
+.submit-btn button.add-cart {
+	background-color: #FFA838;
+}
+.spec-croll {
+	height: 510rpx;
+}
+.s-btn button {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 10;
+	left: 0;
+	top: 0;
+}
+

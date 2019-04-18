@@ -1,0 +1,1 @@
+<template name="37684f7c"><view class="_view 37684f7c nodata flex-con-col" wx:if="{{nodata}}"><image src="{{nodataImg?nodataImg:'/static/img/common_null.png'}}" mode="widthFix" class="_image 37684f7c"></image>{{nodataText}}</view></template>

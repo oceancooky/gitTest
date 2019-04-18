@@ -1,0 +1,48 @@
+
+label {
+	width: 100%;
+	padding-top: 30rpx;
+	color: #E6E6E6;
+	font-weight: 100;
+}
+.pro {
+	font-size: 26rpx;
+	color: #999999;
+	margin-top: 30rpx;
+}
+.pro navigator {
+	color: #4483EB;
+}
+input {
+	font-size: 28rpx;
+	font-weight: 400;
+	color: rgba(153, 153, 153, 1);
+	border-bottom: solid #e6e6e6 1rpx;
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+	/* height: 100upx; */
+	height: 50rpx;
+	padding: 25rpx 0;
+}
+checkbox {
+	margin-right: 10rpx;
+}
+.mar-top {
+	margin-top: 64rpx;
+}
+button[disabled] {
+	color: #FFFFFF;
+	background: #999999;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+.resend {
+	color: #FFFFFF;
+	background-color: #E6E6E6;
+	border: #E6E6E6;
+	font-size: 24rpx;
+	text-align: center;
+}
+

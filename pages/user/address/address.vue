@@ -1,0 +1,128 @@
+<template>
+	<view class="content">
+		<view class="address flex-con" v-for="(item, index) in list" :key="index" @tap="selAddress(item.id)">
+			<view class="address-info">
+				<view class="address-name flex-con">
+					<view class="address-def" v-if="item.is_default">默认</view>{{item.name}}
+					<view class="address-phone">{{item.phone}}</view>
+				</view>
+				<view class="address-detail flex-con justify-bet">{{item.province_text}} {{item.city_text}} {{item.area_text}}
+					{{item.address}}
+					<view class="address-edit" @tap.stop.prevent="goEdit(item.id)"></view>
+				</view>
+			</view>
+		</view>
+
+		<navigator class="fix-btn" :url="'newaddress/newaddress?from=' + from">新增地址</navigator>
+	</view>
+</template>
+
+<script>
+	export default {
+		data() {
+			return {
+				list: {},
+				from: 0
+			};
+		},
+		onLoad(options) {
+			if (options.from) {
+				this.from = options.from
+			}
+		},
+		onShow() {
+			this.getList()
+		},
+		methods: {
+			getList() {
+				var that = this
+				this.$api.get('/api/address/getAddressList', {}, function(res) {
+					console.log(res)
+					if (res.data.code == 200) {
+						that.list = res.data.data
+					}
+				})
+			},
+			goEdit(id) {
+				// if()
+				uni.navigateTo({
+					url: 'editaddress/editaddress?id=' + id
+				})
+			},
+			selAddress(id) {
+				if (this.from == 1) {
+					var pages = getCurrentPages();
+					var prevPage = pages[pages.length - 2];
+					prevPage.$vm.address.id = id
+					prevPage.$vm.isUpdate = true
+					uni.navigateBack();
+				}
+			}
+		}
+	}
+</script>
+
+<style>
+	page {
+		padding-bottom: 120upx;
+	}
+
+	.content {
+		border-top: solid 1upx #d7d7d7;
+	}
+
+	.address {
+		padding: 30upx 30upx;
+		border-bottom: solid 1upx #d7d7d7;
+	}
+
+	.address-info {
+		width: 100%;
+	}
+
+	.address-def {
+		width: 60upx;
+		height: 30upx;
+		background: rgba(235, 42, 56, 1);
+		border-radius: 15upx;
+		font-size: 20upx;
+		font-family: PingFangSC-Medium;
+		font-weight: 500;
+		color: rgba(255, 255, 255, 1);
+		line-height: 30upx;
+		text-align: center;
+		margin-right: 10upx;
+	}
+
+	.address-name {
+		ont-size: 30upx;
+		font-weight: bold;
+		color: rgba(34, 34, 34, 1);
+	}
+
+	.address-phone {
+		font-size: 28upx;
+		font-weight: 400;
+		color: rgba(153, 153, 153, 1);
+		opacity: 0.9;
+		margin-left: 32upx;
+	}
+
+	.address-detail {
+		font-size: 26upx;
+		font-weight: 400;
+		color: rgba(34, 34, 34, 1);
+		margin-top: 20upx;
+		/* align-items: flex-start */
+	}
+
+	.address-edit {
+		width: 60upx;
+		height: 60upx;
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAId0lEQVR4Xu1bfYxcVRU/580s7swCjRiiRQisqQp/AH6EFNpSm1LS1IolVbdKWqMoaWwLspt9984uKk80u3Pvm+7i4kqC8YMQiDYo39jaUqGUj6olgiYYa7ONSmjSyEfYnbds591jTp3Z3H37Zna2285H2PfPbt47973z+537ce7v3EF4j1/4HscP8wTM94AyDHie19ra2roFETsR8fw6EHWIiLqllI+ezm/HDoHt27dfUCgU9iLiotP58ZneTUT/lFJ+dCY7pdRZiNgLAFcS0VEi2muM+W1vb+9/Z2o7jYAdO3Ykjhw58gIAXDFT4xo8PyyEqBgEpdQliLgLAC6w/SGidxDxBiHE45X8nEaA1vqbAPDTGoCr+AmOPgC4UsqHyxn6vt9ujDmAiOfG2RBRwXGcDtd1Hyr3jjgC/gAAK6wGB4homxDiICJSvYkpfZ+HaRiGz0UjH+NfaIzZmMlkfhXnexwBPG7OYWMiGjfGnNfT0/NmowBnPwYHBxdOTEw8j4gXWX5xcG4UQvxSa/0AAHzFfoaIG13X5ftTrjgCJqNMRC9LKT/RSOD7+vrOTSaTHHl7ciQi2iSlvJ99Lc5jvHp81vJ9LJlMfryrq+s1G89MBPxRSrm4UQgYGBg45/jx4/sR8ZKIT98QQvzcvud53hmpVGo3Ii637v9ICHFrUxIwPDx85tjYGEf+spiAfJ27fvR+sc3fAeDDxWcjQoiPNB0BnuelU6nUU4h4ZZnZ3iDiurglTym1ExFXF9uFQohkUxHAGWkqldoV6crTeCCiCcdxVruu+3TpoVLqVkQctIxfE0JMyWobeg7gcZxOp58AgFURxL8mon2IOGzfJ6J8IpFY0d3d/Set9bcA4CeRdloIIZuiB3iel0yn049EZnJemh9ub2//YkdHR6iUug0RfxgB+RYRDSPibZH7hxHxctd1xxqeAM/znFQq9RtEvD4C4sl8Pr/O87xC6b7W+k4A+HallYqI/gMAV0kp+e+Uq+GGABGh1vpeRNwU8XVPPp9f63neRBRETOJjmxwNw/Cqnp6eI3EkNRwBSql7EPGmyNjeFwTBas/zxuNAcOIzMjLyNCIui7Q7ZoxZ0tPTw/uK2KuhCFBK3YWI2yIgXgyC4BrP8/LlQPi+v9gYw9v3dMmGiN5MJBJLuru7OQ8oezUMAVprHwC6I54ebGtrW7F169bRcgi01p8iomcQ8UwL/NtEdHUmk/lrJfD8rCEI0Fp/BwB+EHH2FWPM8kwm8/YM4DnyCyzwo4j4GSHESzOBbwgClFLbEPGuSLd/taWlZVlXV9cb5UBks9lLEfHZCPi84zgrXdc9UA34uhOQzWZvchznnoizhwqFwtLe3t5j5UDkcrmLwzDk7fD7LZt3jTGrMpnM/mrB15UApdQmRLw3Mgz/3dLSsrizs/P1ciD6+/sXOY7D4CdVoGIavMZ13b3Rdrlc7gpjzC0AwCLroJTyHdumLnOA1noDET2AiI41dl93HGep67ojlcAnEolnAeBDVrsCIl4nhNgZ104pdRQRP3gi2oie67rfrysBWmsWKVisSFggjiHiUiHEoQrgL0okEizWToIHgJCI1peTzrXWbGv3poeEEOvrRoDv+6uMMU8g4hmWE28Q0TIp5avlwCuleAf3QqQ+weC/LKV8sEK78xDRVoAeEUJMSa9rNgSy2exylq8RsdVerx3HWe667isVljqO4osAcKFlwxJYRyXwbKuUagwClFIsZLCgYWdqo8Wt68FK4ImIlzq7NjBF/6s04zcEAblc7tNhGHKebmdqnNZeI6XkyMZeLH4mEgme7aOFkWn6X8MOAd/3LzPGsHBhZ2rjRLQ6k8nsK+c4i5+FQoH1v4sjNluEEHdXu87XtQdorVm25gifqDHwVVyv17quu6cciGw2u6CY4V1q2xBRp5SS9/5VX3UjoFiyeg4RF1rgeb1m4fLJcghYxR0dHeUe88mIzR1CiNurRl40rBsBSqnHEXFtJII/llLeXAn82NgY94wpdQgiulNK2Tlb8HVbBYpa3lsA0BZxumzSwrJ3Op3mNDZahLlbCLHlZMDXjQCt9dUAEDvBcbUWAL5gZ25F2ZsrOFE15xdSyhtPFnzdCFBK3YGI37Uc54LkDfZcUCKhKHv/DgBWRobL/UII3izNqRpdlzlAKcUpa6mC87d8Pn95Op1mEjZESQAAPoJTqtqUVooHgyDY4HmemUv069IDfN9v45MZ1hb3RDGyTLV2Gj4ierS9vX09a/5zBV8XApRS1yPi5GkMRPy867qPsTMVqjylyO8KguBztuY/VxJqPgSUUlyRKc3ahIhncSWmmNxci4gdAPClGGB78/n8mjjNfy4k1JwArfU/SgcXiIgLEazxrwGAJfb+PzLh7Q+C4Npymn/TEFA8s/OvWTp8IJ/Pr6yk+c/yfVPMa9oDtNa8Zv+sCof5HN9TjuPsDMPwsUqydxXvqmhSUwJiavEl58aKpezdxpg91RQr5gq81L6mBPT19X0gmUyyHs8nt/5MRHsQcfeCBQue37x58/FTBWo276kpAezY0NDQ+8bHx88XQhyejaOny7bmBJwuICf73nkCGkUUPdkIzrXdfA+Yaw8AgL8IIaLy1FwDU7P2/f39XE2yS21VFUb4MEJJzXk3DMOFjXZYuloGfd/fSET3lez5fynlV+320ypDSqmXbFGSiFjZvbnRjstXImFgYCA1MTFxneM4LKFPqtIAcIsQYspZhGkE+L5/OxF51bLcLHZ89L+lpWXRjKfFh4aGzg6C4OXIWfxmwVnWTyL6npQyegwn/neDuVzuwjAMf4+IH2t65P8vyNwXBMHX4mS2sj+c5F9iAQALHOsA4OwmJeIZY4yfyWT4vHHsNf/L0SaN7Clze74HnDIqm/RF/wN/dnuM5MJmFAAAAABJRU5ErkJggg==');
+		background-size: 40upx 40upx;
+		background-position: right center;
+		background-repeat: no-repeat;
+		margin-left: 30upx;
+	}
+</style>

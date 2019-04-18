@@ -1,0 +1,18 @@
+
+page {
+	background-color: #f4f4f4;
+	padding-top: 20rpx;
+}
+.content {
+	background-color: #fff;
+}
+.content .menu:last-child {
+	border: none;
+}
+picker {
+	width: 100%;
+}
+input {
+	width: 100%;
+}
+

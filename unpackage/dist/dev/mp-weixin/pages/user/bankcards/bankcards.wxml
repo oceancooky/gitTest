@@ -1,0 +1,2 @@
+<import src="./bankcards.vue.wxml" />
+    <template is="baa95c62" data="{{ ...$root['0'], $root }}"/>

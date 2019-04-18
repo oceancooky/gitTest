@@ -1,0 +1,13 @@
+
+      !(function(){
+        var uniAppViewReadyCallback = function(){
+          setCssToHead(["body { background-color: #F8F8F8; }\n.",[1],"goods_card_price { opacity: 0; }\n.",[1],"order-item-des { font-size: ",[0,24],"; color: #666666; font-weight: 500; }\n.",[1],"order-item-des wx-image { width: ",[0,28],"; height: auto; margin-right: ",[0,6],"; }\n.",[1],"order-item-des wx-text { margin-left: ",[0,10],"; }\n.",[1],"order-item-btns { -webkit-box-flex: 2; -webkit-flex: 2; -ms-flex: 2; flex: 2; }\n.",[1],"order-item-btns .",[1],"_button { margin-right: 0; }\n.",[1],"order-afteron { color: #CB0E0E; }\n.",[1],"order-afteroff { color: #4483EB; }\n.",[1],"mask { position: fixed; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, 0.5); }\n.",[1],"write_box { width: 80%; height: ",[0,400],"; background-color: #fff; border-radius: ",[0,6],"; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }\n.",[1],"write_box_title { font-size: ",[0,30],"; color: #222; font-weight: bold; margin: ",[0,30]," auto; text-align: center; }\n.",[1],"write_box .",[1],"_input { width: 80%; height: ",[0,70],"; font-size: ",[0,28],"; margin: ",[0,20]," auto; border: solid ",[0,1]," #cdcdcd; border-radius: ",[0,6],"; padding-left: ",[0,20],"; }\n.",[1],"write_box_btn { width: 100%; height: ",[0,100],"; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; position: absolute; bottom: 0; border-top: solid ",[0,1]," #e6e6e6; }\n.",[1],"write_box_btn wx-view { width: 50%; height: 100%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -webkit-justify-content: center; -ms-flex-pack: center; justify-content: center; font-size: ",[0,30],"; color: #222; font-weight: bold; }\n.",[1],"write_box_btn wx-view:first-child { border-right: solid ",[0,1]," rgba(230, 230, 230, 0.5); }\n.",[1],"write_box_btn wx-view:last-child { border-left: solid ",[0,1]," rgba(230, 230, 230, 0.5); }\n.",[1],"delivery_picker { margin: ",[0,20]," ",[0,48],"; font-size: ",[0,28],"; padding: ",[0,15]," ",[0,20],"; border: ",[0,1]," solid #cdcdcd; border-radius: ",[0,6],"; }\n",],undefined,{path:"./pages/user/aftersales/aftersales.wxss"})();
+document.dispatchEvent(new CustomEvent("generateFuncReady", { detail: { generateFunc: $gwx('./pages/user/aftersales/aftersales.wxml') } }));
+        }
+        if(window.__uniAppViewReady__){
+          uniAppViewReadyCallback()
+        }else{
+          document.addEventListener('uniAppViewReady',uniAppViewReadyCallback)
+        }
+      })();
+      

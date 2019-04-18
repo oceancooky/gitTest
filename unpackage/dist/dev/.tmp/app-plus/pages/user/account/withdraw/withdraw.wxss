@@ -1,0 +1,36 @@
+
+page {
+	background-color: #f8f8f8;
+}
+.menu {
+	background-color: #FFFFFF;
+}
+picker {
+	width: 100%;
+}
+.withdrawPlace {
+	font-size: 28rpx;
+	color: #666666;
+	text-align: right;
+	font-weight: normal;
+}
+.withdraw-num {
+	font-size: 40rpx;
+	font-weight: 500;
+	color: rgba(203, 14, 14, 1);
+	text-align: right;
+}
+.add-newcard {
+	color: #4483EB;
+}
+.add-newcard::before {
+	content: '';
+	width: 24rpx;
+	height: 24rpx;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAA4ElEQVRoQ+2Yuw3CQAxAbdHAABmAmiEowlpQhEFYgwIKdqCkozt6OjBKkYLohHSylaN4qRN/nt85UVSCr3afniq6yIY1eZ92zSwypUYG62PRQCFRJjAGhkIoVEgAhZzA2EIohEJOAijkBMgWQiEUchKorlDbPa6qsgruY5pwZjelgWlY57MwgZr0+9xM4D8mkA4qugyrRWX9M5bJJSqXidz5mKv+Jo4a5xCHP3OFRDkDnIFCZca3oxAKoZCTAAo5AbKFUAiFnARQyAkwfAttunQU0XmuLlN5nbdN66z56/EP51QdYOsjoJsAAAAASUVORK5CYII=');
+	background-repeat: no-repeat;
+	background-size: 24rpx 24rpx;
+	background-position: left center;
+	margin-right: 10rpx;
+}
+

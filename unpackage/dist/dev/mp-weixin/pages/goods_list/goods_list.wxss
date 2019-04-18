@@ -1,0 +1,36 @@
+
+page {
+	padding-top: 40rpx;
+	background-color: #f4f4f4;
+}
+.nodata {
+	width: 405rpx;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	font-size: 28rpx;
+	font-weight: 500;
+	color: rgba(155, 155, 155, 1);
+	text-align: center;
+	overflow: hidden;
+}
+.nodata image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 40rpx;
+}
+.goods_con {
+	position: relative;
+}
+.goodsmask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	top: 0;
+}
+

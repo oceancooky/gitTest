@@ -1,0 +1,115 @@
+
+page {
+	background-color: #F8F8F8;
+}
+.goods_card_price {
+	opacity: 0;
+}
+.order-item-des {
+	font-size: 24rpx;
+	color: #666666;
+	font-weight: 500;
+}
+.order-item-des image {
+	width: 28rpx;
+	height: auto;
+	margin-right: 6rpx;
+}
+.order-item-des text {
+	margin-left: 10rpx;
+}
+.order-item-btns {
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+}
+.order-item-btns ._button {
+	margin-right: 0;
+}
+.order-afteron {
+	color: #CB0E0E;
+}
+.order-afteroff {
+	color: #4483EB;
+}
+.mask {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.write_box {
+	width: 80%;
+	height: 400rpx;
+	background-color: #fff;
+	border-radius: 6rpx;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+}
+.write_box_title {
+	font-size: 30rpx;
+	color: #222;
+	font-weight: bold;
+	margin: 30rpx auto;
+	text-align: center;
+}
+.write_box ._input {
+	width: 80%;
+	height: 70rpx;
+	font-size: 28rpx;
+	margin: 20rpx auto;
+	border: solid 1rpx #cdcdcd;
+	border-radius: 6rpx;
+	padding-left: 20rpx;
+}
+.write_box_btn {
+	width: 100%;
+	height: 100rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	border-top: solid 1rpx #e6e6e6;
+}
+.write_box_btn view {
+	width: 50%;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	font-size: 30rpx;
+	color: #222;
+	font-weight: bold;
+}
+.write_box_btn view:first-child {
+	border-right: solid 1rpx rgba(230, 230, 230, 0.5);
+}
+.write_box_btn view:last-child {
+	border-left: solid 1rpx rgba(230, 230, 230, 0.5);
+}
+.delivery_picker {
+	margin: 20rpx 48rpx;
+	font-size: 28rpx;
+	padding: 15rpx 20rpx;
+	border: 1rpx solid #cdcdcd;
+	border-radius: 6rpx;
+}
+

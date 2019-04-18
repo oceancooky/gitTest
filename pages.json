@@ -1,0 +1,295 @@
+{
+	"pages": [{
+			"path": "pages/tabbar/tabbar-1/tabbar-1",
+			"style": {
+				"navigationBarTitleText": "龙腾虎跃"
+			}
+		},
+		{
+			"path": "pages/tabbar/tabbar-2/tabbar-2",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"disableScroll": true
+			}
+		},
+		{
+			"path": "pages/tabbar/tabbar-3/tabbar-3",
+			"style": {
+				"navigationBarTitleText": "购物车"
+			}
+		},
+		{
+			"path": "pages/tabbar/tabbar-4/tabbar-4",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#F34735",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/goods_detail/goods_detail",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path": "pages/goods_list/goods_list",
+			"style": {
+				"navigationBarTitleText": "代售商品"
+			}
+		},
+		{
+			"path": "pages/user/about/about",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/user/orders/orders",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user/register/register",
+			"style": {
+				"navigationBarTitleText": "手机注册"
+			}
+		},
+		{
+			"path": "pages/user/bankcards/bankcards",
+			"style": {
+				"navigationBarTitleText": "银行卡管理"
+			}
+		},
+		{
+			"path": "pages/user/bankcards/newcard/newcard",
+			"style": {
+				"navigationBarTitleText": "新增银行卡"
+			}
+		},
+		{
+			"path": "pages/user/address/address",
+			"style": {
+				"navigationBarTitleText": "地址管理"
+			}
+		},
+		{
+			"path": "pages/user/address/newaddress/newaddress",
+			"style": {
+				"navigationBarTitleText": "新增收货地址"
+			}
+		},
+		{
+			"path": "pages/user/account/commission/commission",
+			"style": {
+				"navigationBarTitleText": "佣金管理",
+				"navigationBarBackgroundColor": "#F34735",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/account/commission/income/income",
+			"style": {
+				"navigationBarTitleText": "佣金来源",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user/account/commission/record/record",
+			"style": {
+				"navigationBarTitleText": "提现明细",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user/account/points/points",
+			"style": {
+				"navigationBarTitleText": "我的积分",
+				"navigationBarBackgroundColor": "#4483EB",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/account/points/income/income",
+			"style": {
+				"navigationBarTitleText": "积分来源",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user/account/points/record/record",
+			"style": {
+				"navigationBarTitleText": "使用明细",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user/account/coins/coins",
+			"style": {
+				"navigationBarTitleText": "购物币管理",
+				"navigationBarBackgroundColor": "#D4B47A",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path": "pages/user/account/coins/income/income",
+			"style": {
+				"navigationBarTitleText": "购物币明细",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user/account/coins/record/record",
+			"style": {
+				"navigationBarTitleText": "提现明细",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/news/news",
+			"style": {
+				"navigationBarTitleText": "公告"
+			}
+		},
+		{
+			"path": "pages/user/aftersales/aftersales",
+			"style": {
+				"navigationBarTitleText": "售后",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user/orders/order-detail/order-detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},
+		{
+			"path": "pages/pay/pay",
+			"style": {
+				"navigationBarTitleText": "订单支付"
+			}
+		},
+		{
+			"path": "pages/user/team/team",
+			"style": {
+				"navigationBarTitleText": "我的团队",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mall/mall",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/search/search",
+			"style": {
+				"navigationBarTitleText": "搜索",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/user/account/withdraw/withdraw",
+			"style": {
+				"navigationBarTitleText": "提现"
+			}
+		},
+		{
+			"path": "pages/user/inviteCode/inviteCode",
+			"style": {
+				"navigationBarTitleText": "我的邀请码",
+				"navigationBarBackgroundColor": "#FA4059",
+				"navigationBarTextStyle": "white",
+				 "disableScroll": true
+			}
+		},
+		{
+			"path": "pages/user/aftersales/apply/apply",
+			"style": {
+				"navigationBarTitleText": "申请售后"
+			}
+		},
+		{
+			"path": "pages/user/orders/logistics/logistics",
+			"style": {
+				"navigationBarTitleText": "物流信息"
+			}
+		},
+		{
+			"path": "pages/user/address/editaddress/editaddress",
+			"style": {
+				"navigationBarTitleText": "编辑地址"
+			}
+		},
+		{
+			"path": "pages/user/register/exCode/exCode",
+			"style": {
+				"navigationBarTitleText": "申请成为会员"
+			}
+		},
+		{
+			"path": "pages/pay/pay_success/pay_success",
+			"style": {
+				"navigationBarTitleText": "支付成功"
+			}
+		},
+		{
+			"path": "pages/pay/otherpay/otherpay",
+			"style": {
+				"navigationBarTitleText": "订单支付"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "龙腾虎跃",
+		"navigationBarBackgroundColor": "#FFFFFF"
+	},
+	// "backgroundColor" : "#F8F8F8"
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#fff",
+		"color": "#8F8F94",
+		"selectedColor": "#f33e54",
+		"list": [{
+				"pagePath": "pages/tabbar/tabbar-1/tabbar-1",
+				"iconPath": "static/img/tabbar/home.png",
+				"selectedIconPath": "static/img/tabbar/homeactive.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabbar/tabbar-2/tabbar-2",
+				"iconPath": "static/img/tabbar/classify.png",
+				"selectedIconPath": "static/img/tabbar/classifyactive.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/tabbar/tabbar-3/tabbar-3",
+				"iconPath": "static/img/tabbar/cart.png",
+				"selectedIconPath": "static/img/tabbar/cartactive.png",
+				"text": "购物车"
+			},
+			{
+				"pagePath": "pages/tabbar/tabbar-4/tabbar-4",
+				"iconPath": "static/img/tabbar/user.png",
+				"selectedIconPath": "static/img/tabbar/useractive.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": {
+		//模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+			"name": "", //模式名称
+			"path": "pages/user/register/register", //启动页面，必选
+			"query": "" //启动参数，在页面的onLoad函数里面得到
+		}]
+	}
+}

@@ -1,0 +1,44 @@
+
+page {
+	background-color: #F8F8F8;
+}
+.goods_card {
+	height: 150rpx;
+}
+.goods_card_img {
+	width: 150rpx;
+	height: 150rpx;
+}
+.goods_card-price-r {
+	color: #2A353A;
+	font-size: 26rpx;
+}
+.goods_card {
+	margin-bottom: 20rpx;
+}
+.order-item-goods .goods_card:last-child {
+	margin-bottom: 0;
+}
+.write_box_btn view {
+	width: 50%;
+	height: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	font-size: 30rpx;
+	color: #222;
+	font-weight: bold;
+}
+.goods_card_info {
+	padding: 8rpx 0;
+}
+

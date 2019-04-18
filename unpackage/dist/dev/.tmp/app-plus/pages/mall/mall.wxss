@@ -1,0 +1,20 @@
+
+page,
+.top_tap {
+	background-color: #f4f4f4;
+}
+.top_tap {
+	display: block;
+	white-space: nowrap;
+}
+.top_tap .top_tap_item {
+	padding: 0 40rpx;
+	display: inline-block;
+}
+.tabflex {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+

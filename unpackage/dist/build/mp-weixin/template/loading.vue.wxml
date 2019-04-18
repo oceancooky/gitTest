@@ -1,0 +1,1 @@
+<template name="648fb560"><view class="_view 648fb560 loader" wx:if="{{isLoading}}"><view class="_view 648fb560 loader-inner pacman"><view class="_view 648fb560"></view><view class="_view 648fb560"></view><view class="_view 648fb560"></view><view class="_view 648fb560"></view><view class="_view 648fb560"></view></view></view></template>

@@ -1,0 +1,22 @@
+
+page {
+	background-color: #f4f4f4;
+}
+.menu {
+	border: none;
+	margin: 100rpx 0 200rpx 0;
+	background-color: #FFFFFF;
+}
+.menu .menu-name {
+	width: 130rpx;
+}
+.menu ._input {
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2;
+}
+._button {
+	width: 50%;
+}
+

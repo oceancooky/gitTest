@@ -1,0 +1,2 @@
+<import src="./tabbar-2.vue.wxml" />
+    <template is="eb28941c" data="{{ ...$root['0'], $root }}"/>

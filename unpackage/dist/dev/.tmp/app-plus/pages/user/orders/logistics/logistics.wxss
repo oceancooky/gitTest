@@ -1,0 +1,127 @@
+
+.log_goods {
+	height: 150rpx;
+	border-bottom: solid 20rpx #f8f8f8;
+	border-top: solid 1rpx #ececec;
+}
+.log_goods_img {
+	width: 150rpx;
+	height: 150rpx;
+	overflow: hidden;
+	margin-right: 20rpx;
+}
+.log_goods_img image {
+	width: 100%;
+	height: auto;
+}
+.log_goods_info {
+	font-size: 28rpx;
+	color: #666;
+	font-weight: bold;
+}
+.log_goods_info text {
+	color: #cb0e0e;
+}
+.log_info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	height: 130rpx;
+}
+.log_state {
+	width: 30rpx;
+	margin-right: 25rpx;
+	position: relative;
+	height: 100%;
+}
+.log_text {
+	color: #666;
+	-webkit-box-flex: 2;
+	-webkit-flex: 2;
+	    -ms-flex: 2;
+	        flex: 2
+}
+.log_title {
+	font-size: 24rpx;
+	margin-bottom: 8rpx;
+	word-break: break-all;
+	word-wrap: break-word;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+.martop20 .log_info:first-child .log_title {
+	font-weight: bold;
+	color: #222222;
+}
+.log_date {
+	font-size: 26rpx;
+}
+.log_state_cicle_big {
+	background-color: #eeb2b2;
+	width: 30rpx;
+	height: 30rpx;
+	border-radius: 30rpx;
+	position: absolute;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	z-index: 2;
+}
+.log_state_cicle_nomal {
+	background-color: #cb0e0e;
+	width: 20rpx;
+	height: 20rpx;
+	border-radius: 20rpx;
+}
+.log_state_line {
+	width: 1rpx;
+	background-color: hsl(0, 0%, 93%);
+	position: absolute;
+	left: 50%;
+	/* top: 34upx; */
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	z-index: 1;
+	height: 100%;
+}
+.log_state_cicle_small {
+	width: 15rpx;
+	height: 15rpx;
+	position: absolute;
+	background-color: #ececec;
+	border-radius: 15rpx;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	        transform: translateX(-50%);
+}
+.padding-top20 .log_info:last-child .log_state_line {
+	display: none;
+}
+.delivery_msg {
+	font-size: 26rpx;
+	color: #666;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	    -ms-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%)
+}
+

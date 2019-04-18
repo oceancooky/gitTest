@@ -1,0 +1,26 @@
+
+.pay_success {
+	margin-left: 30rpx;
+	font-size: 44rpx;
+	font-weight: 500;
+	color: #222222
+}
+.martop20 {
+	margin-top: 90rpx;
+}
+.success-nav {
+	width: 220rpx;
+	height: 74rpx;
+	line-height: 74rpx;
+	border: 1rpx solid rgba(204, 204, 204, 1);
+	border-radius: 6rpx;
+	font-size: 30rpx;
+	color: #222222;
+	text-align: center;
+	margin: 100rpx 20rpx;
+}
+.success-nav.goback {
+	border: 1rpx solid rgba(204, 20, 20, 1);
+	color: #CB0E0E;
+}
+

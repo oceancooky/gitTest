@@ -1,0 +1,117 @@
+
+page {
+	background-color: #F8F8F8;
+}
+.content {
+	background-color: #FFFFFF;
+	overflow: hidden;
+}
+.order-item {
+	margin-top: 0;
+}
+.menu {
+	height: 88rpx;
+	border: none;
+}
+.text-container {
+	border: 2rpx solid rgba(205, 205, 205, 1);
+	border-radius: 6rpx;
+	height: 200rpx;
+}
+textarea {
+	height: 100%;
+	width: 100%;
+	font-size: 28rpx;
+	font-weight: 400;
+	color: rgba(204, 204, 204, 1);
+}
+.img_box {
+	margin: 20rpx 0 60rpx 0;
+}
+.choose_img {
+	width: 160rpx;
+	height: 160rpx;
+	border: dashed 1rpx #999;
+	color: #999;
+	font-size: 24rpx;
+	float: left;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0 8rpx 20rpx 0;
+	border-radius: 6rpx;
+	overflow: hidden;
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.choose_img.nobord {
+	border: none;
+}
+.upload_img {
+	width: 100%;
+	height: auto;
+}
+.photo_icon {
+	width: 48rpx;
+	height: auto;
+	margin-bottom: 20rpx;
+}
+.contact-item {
+	font-size: 28rpx;
+	color: #222222;
+}
+.contact {
+	width: 150rpx;
+}
+.sub-tips {
+	font-size: 22rpx;
+	font-weight: 500;
+	color: rgba(153, 153, 153, 1);
+	line-height: 30rpx;
+}
+.type-btn {
+	width: 335rpx;
+	height: 110rpx;
+	background: rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0rpx 4rpx 14rpx 0rpx rgba(102, 102, 102, 0.13);
+	        box-shadow: 0rpx 4rpx 14rpx 0rpx rgba(102, 102, 102, 0.13);
+	border-radius: 6rpx;
+	color: #999999;
+	font-size: 32rpx;
+}
+.type-btn image {
+	width: 60rpx;
+	height: auto;
+	margin-right: 14rpx;
+}
+.sel {
+	color: #4483EB;
+	background-color: #F2F7FF;
+	border: 3rpx solid rgba(68, 131, 235, 1);
+	-webkit-box-shadow: 0rpx 4rpx 14rpx 0rpx rgba(102, 102, 102, 0.13);
+	        box-shadow: 0rpx 4rpx 14rpx 0rpx rgba(102, 102, 102, 0.13);
+}
+.img_delete_btn {
+	width: 40rpx;
+	height: 40rpx;
+	overflow: hidden;
+	border-radius: 40rpx;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.img_delete_btn image {
+	width: 100%;
+	height: auto;
+}
+

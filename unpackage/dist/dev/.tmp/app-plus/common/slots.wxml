@@ -1,0 +1,6 @@
+<import src="/template/goods.vue.wxml" />
+<import src="/template/no_data.vue.wxml" />
+<import src="/template/load_more.vue.wxml" />
+<import src="/template/goods_card.vue.wxml" />
+<import src="/auth/login.vue.wxml" />
+

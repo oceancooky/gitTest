@@ -1,0 +1,20 @@
+
+.content-wrap {
+	background-color: #D4B47A;
+}
+.withdraw-tips {
+	color: #BA9552;
+}
+.withdraw-btn {
+	background-color: #FFFFFF;
+	color: #D4B47A;
+}
+.withdraw-record {
+	font-size: 26rpx;
+	font-weight: 400;
+	color: #FFFFFF;
+	position: absolute;
+	right: 60rpx;
+	top: 0;
+}
+

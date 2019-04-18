@@ -1,0 +1,139 @@
+
+page {
+	background-color: #f4f4f4;
+	padding-bottom: 99rpx;
+}
+.content {
+	width: 100%;
+}
+.top-menu {
+	height: 80rpx;
+	width: 100%;
+	background-color: #fff;
+	border-top: solid 1rpx #f4f5f7;
+	border-bottom: solid 1rpx #f4f5f7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.top-menu-con {
+	height: 100%;
+	font-size: 30rpx;
+	font-weight: 400;
+	color: rgba(51, 51, 51, 1);
+	line-height: 36rpx;
+	z-index: 10;
+	background-color: #FFFFFF;
+}
+.top-menu-con .active {
+	color: #CC1414;
+}
+.cart {
+	margin-top: 98rpx;
+	background-color: #FFFFFF;
+}
+.mar184 {
+	margin-top: 184rpx;
+}
+.cart-item {
+	padding: 30rpx;
+	border-bottom: solid 1rpx #f4f4f4;
+}
+.bottom-menu {
+	height: 98rpx;
+	width: 100%;
+	background-color: #fff;
+	border-top: solid 1rpx #f4f5f7;
+}
+.bottom-menu-con {
+	height: 100%;
+	font-size: 30rpx;
+	color: #222222;
+}
+._button {
+	margin: 0;
+	color: #FFFFFF;
+	height: 74rpx;
+	font-size: 30rpx;
+	font-weight: 400;
+	background: rgba(204, 20, 20, 1);
+	border-radius: 6rpx;
+	line-height: 74rpx;
+	padding: 0 64rpx;
+}
+._button.del-butt {
+	color: #222222;
+	background-color: #FFFFFF;
+	border: 2rpx solid rgba(153, 153, 153, 1);
+}
+.total {
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	line-height: 60rpx;
+}
+.total-price {
+	font-size: 48rpx;
+	font-weight: bold;
+	color: rgba(204, 27, 39, 1);
+	margin-left: 12rpx;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	line-height: 65rpx;
+}
+.total-price-sym {
+	font-size: 24rpx;
+	line-height: 50rpx;
+	margin-right: 5rpx;
+}
+.top_tap_item {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.top_tap_item.on {
+	background-color: #cb1522;
+	color: #FFFFFF;
+}
+.fixed90 {
+	top: 90rpx;
+}
+.overdue {
+	width: 70rpx;
+	height: 30rpx;
+	line-height: 30rpx;
+	text-align: center;
+	border-radius: 30rpx;
+	background-color: #999999;
+	color: #FFFFFF;
+	font-size: 22rpx;
+	margin-right: 4rpx;
+	margin-top: 10rpx;
+}
+.overdueList .goods_card_op {
+	display: none;
+}
+.overdue-reason {
+	position: absolute;
+	left: 200rpx;
+	bottom: 0rpx;
+	font-size: 24rpx;
+	color: #666666;
+}
+.overdue-del {
+	color: #FFFFFF;
+	background-color: #CC1414;
+}
+.nodata {
+	position: fixed;
+}
+.goods_card_container{
+	position: relative;
+}
+.nodata image{
+	width: 192rpx;
+}
+

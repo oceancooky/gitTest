@@ -1,0 +1,102 @@
+{
+  "@platforms": [
+    "android",
+    "iPhone",
+    "iPad"
+  ],
+  "id": "__UNI__0810EC5",
+  "name": "龙腾虎跃",
+  "version": {
+    "name": "1.0.0",
+    "code": "100"
+  },
+  "description": "",
+  "launch_path": "__uniappservice.html",
+  "developer": {
+    "name": "",
+    "email": "",
+    "url": ""
+  },
+  "permissions": {
+    "Payment": {},
+    "Share": {},
+    "OAuth": {}
+  },
+  "plus": {
+    "useragent": {
+      "value": "uni-app appservice",
+      "concatenate": true
+    },
+    "splashscreen": {
+      "target": "id:1",
+      "autoclose": true,
+      "waiting": true,
+      "delay": 0
+    },
+    "popGesture": "close",
+    "launchwebview": {
+      "render": "always"
+    },
+    "statusbar": {
+      "immersed": "supportedDevice",
+      "style": "dark",
+      "background": "#FFFFFF"
+    },
+    "distribute": {
+      "google": {
+        "permissions": [
+          "<uses-feature android:name=\"android.hardware.camera\"/>",
+          "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+          "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+          "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+          "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+          "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+          "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+          "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+          "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+          "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+          "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+          "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+          "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>"
+        ]
+      },
+      "apple": {},
+      "plugins": {
+        "maps": {},
+        "payment": {
+          "weixin": {
+            "appid": "wxf9b12c35848fee32"
+          }
+        },
+        "share": {
+          "weixin": {
+            "appid": "wxf9b12c35848fee32",
+            "appsecret": "3cd5e49a66351356f9ab61c7234f08d5"
+          }
+        },
+        "oauth": {
+          "weixin": {
+            "appid": "wxf9b12c35848fee32",
+            "appsecret": "3cd5e49a66351356f9ab61c7234f08d5"
+          }
+        },
+        "audio": {
+          "mp3": {
+            "description": "Android平台录音支持MP3格式文件"
+          }
+        }
+      }
+    },
+    "arguments": "{\"name\":\"\",\"query\":\"field_id=6&field=0\",\"id\":0,\"pathName\":\"pages/user/aftersales/apply/apply\"}",
+    "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#fff",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
+    "uni-app": {
+      "compilerVersion": "1.7.0"
+    }
+  }
+}

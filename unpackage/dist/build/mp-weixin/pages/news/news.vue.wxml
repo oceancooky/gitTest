@@ -1,0 +1,1 @@
+<template name="1892de3b"><view class="_view 1892de3b"><view class="_view 1892de3b article_title padding-top20">{{info.title}}</view><view class="_view 1892de3b article_date padding-content">发表于 {{info.create_time_text}}</view><view class="_view 1892de3b padding-top20"><rich-text nodes="{{Html}}" class="_rich-text 1892de3b"></rich-text></view></view></template>

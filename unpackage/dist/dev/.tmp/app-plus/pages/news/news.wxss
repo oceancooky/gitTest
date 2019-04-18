@@ -1,0 +1,15 @@
+
+.article_title {
+	font-weight: bold;
+	font-size: 36rpx;
+	color: #222;
+}
+.article_date {
+	font-size: 26rpx;
+	color: #666;
+	margin-bottom: 30rpx;
+}
+page {
+	padding-bottom: 30rpx;
+}
+

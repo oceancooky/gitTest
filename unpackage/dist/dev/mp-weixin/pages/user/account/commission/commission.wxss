@@ -1,0 +1,31 @@
+
+.content-wrap {
+	background-color: #F34735;
+}
+.martop20 {
+	margin-top: 40rpx;
+}
+.list {
+	/* border-bottom: solid 1upx #e6e6e6; */
+}
+.list-item {
+	height: 90rpx;
+	line-height: 90rpx;
+	text-align: center;
+	font-size: 26rpx;
+	color: rgba(34, 34, 34, 1);
+	width: 84rpx;
+}
+.font-weg {
+	width: 370rpx;
+}
+.font-thin {
+	width: 140rpx;
+}
+.martop20 .list:nth-of-type(odd) {
+	background-color: #FFFFFF;
+}
+.martop20 .list:nth-of-type(even) {
+	background-color: #f4f5f7;
+}
+
